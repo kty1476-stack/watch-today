@@ -1,0 +1,21 @@
+{%- comment -%}
+  카테고리 이름(또는 slug)을 넘기면 cat_name / cat_slug / cat_color / cat_c2 / cat_icon / cat_desc 를 세팅합니다.
+  사용: {% include catmeta.html name=post.categories.first %}
+{%- endcomment -%}
+{%- assign _d = site.data.categories.default -%}
+{%- assign cat_name = include.name -%}
+{%- assign cat_slug = "etc" -%}
+{%- assign cat_color = _d.color -%}
+{%- assign cat_c2 = _d.c2 -%}
+{%- assign cat_icon = _d.icon -%}
+{%- assign cat_desc = "" -%}
+{%- for c in site.data.categories.fixed -%}
+  {%- if c.name == include.name or c.slug == include.name -%}
+    {%- assign cat_name = c.name -%}
+    {%- assign cat_slug = c.slug -%}
+    {%- assign cat_color = c.color -%}
+    {%- assign cat_c2 = c.c2 -%}
+    {%- assign cat_icon = c.icon -%}
+    {%- assign cat_desc = c.desc -%}
+  {%- endif -%}
+{%- endfor -%}

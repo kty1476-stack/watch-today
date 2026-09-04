@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{%- include catmeta.html name=page.cat_slug -%}
+{%- assign posts = site.categories[cat_name] -%}
+<section class="cat-hero" style="--c1:{{ cat_color }};--c2:{{ cat_c2 }}">
+  <div class="wrap">
+    <p class="cat-hero-ico">{{ cat_icon }}</p>
+    <h1 class="cat-hero-title">{{ cat_name }}</h1>
+    <p class="cat-hero-desc">{{ cat_desc }}</p>
+    <p class="cat-hero-count">{{ posts | size | default: 0 }}편</p>
+  </div>
+</section>
+
+<section class="wrap section">
+  {%- if posts.size > 0 -%}
+  <div class="grid">
+    {%- for p in posts -%}{%- include card.html post=p -%}{%- endfor -%}
+  </div>
+  {%- else -%}
+  <p class="empty">아직 이 카테고리에 올린 글이 없습니다. 곧 채워집니다.</p>
+  {%- endif -%}
+</section>

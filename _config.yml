@@ -1,0 +1,61 @@
+title: 오늘 뭐보지
+tagline: 드라마·영화·OTT, 오늘 볼 것만 골라드립니다
+description: >-
+  30년을 지켜본 눈으로 고른 오늘의 드라마·영화·OTT.
+  회차 리뷰, 심층 평론, 신작 추천을 매일 씁니다.
+
+url: "https://kty1476-stack.github.io"
+baseurl: "/watch-today"
+
+lang: ko-KR
+timezone: Asia/Seoul
+
+author:
+  name: 오늘 뭐보지
+email: kty1476@gmail.com
+
+social:
+  name: 오늘 뭐보지
+  email: kty1476@gmail.com
+  links:
+    - https://github.com/kty1476-stack
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+permalink: /posts/:title/
+
+feed:
+  path: /feed.xml
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .sass-cache
+  - tools
+  - LICENSE

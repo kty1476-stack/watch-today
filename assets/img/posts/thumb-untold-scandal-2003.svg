@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="영화 평론 - 스캔들 조선남녀상열지사">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#3B1C7A"/>
+    </linearGradient>
+    <linearGradient id="scrim" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.34"/>
+      <stop offset="62%" stop-color="#000" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.10">
+    <circle cx="1080" cy="70" r="200" fill="#fff"/>
+    <circle cx="90" cy="600" r="150" fill="#fff"/>
+  </g>
+  <rect width="1200" height="630" fill="url(#scrim)"/>
+
+  <g transform="translate(810,118)" style="--c1:#7C3AED">
+      <circle cx="200" cy="180" r="130" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="8"/>
+      <circle cx="200" cy="180" r="26" fill="rgba(255,255,255,.7)"/>
+      <circle cx="200" cy="92" r="30" fill="rgba(255,255,255,.22)"/>
+      <circle cx="200" cy="268" r="30" fill="rgba(255,255,255,.22)"/>
+      <circle cx="288" cy="180" r="30" fill="rgba(255,255,255,.22)"/>
+      <circle cx="112" cy="180" r="30" fill="rgba(255,255,255,.22)"/>
+      <rect x="40" y="322" width="320" height="48" rx="8" fill="rgba(255,255,255,.16)" stroke="rgba(255,255,255,.45)" stroke-width="4"/>
+      <path d="M76 322 v48 M132 322 v48 M188 322 v48 M244 322 v48 M300 322 v48" stroke="rgba(255,255,255,.45)" stroke-width="4"/>
+    </g>
+
+  <g font-family="'Noto Sans KR','Noto Sans CJK KR','Apple SD Gothic Neo','Malgun Gothic','Nanum Gothic',sans-serif">
+    <rect x="72" y="66" rx="20" height="40" width="144" fill="rgba(255,255,255,.92)"/>
+    <text x="144" y="94" font-size="22" font-weight="700" fill="#3B1C7A" text-anchor="middle">영화 평론</text>
+
+    <text x="72" y="288" font-size="60" font-weight="900" fill="#fff" letter-spacing="-1.5">스캔들 조선남녀상열지사</text>
+    <text x="72" y="364" font-size="60" font-weight="900" fill="#fff" letter-spacing="-1.5">23년 만의 재조명</text>
+
+    <rect x="72" y="414" width="86" height="6" rx="3" fill="rgba(255,255,255,.75)"/>
+    <text x="72" y="494" font-size="34" font-weight="500" fill="rgba(255,255,255,.92)">넷플릭스 스캔들이 물려받는 것</text>
+
+    <text x="72" y="574" font-size="24" font-weight="700" fill="rgba(255,255,255,.7)">▶ 오늘 뭐보지</text>
+  </g>
+</svg>

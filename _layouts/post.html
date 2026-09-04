@@ -1,0 +1,73 @@
+---
+layout: default
+---
+{%- include catmeta.html name=page.categories.first -%}
+<article class="post" style="--c1:{{ cat_color }};--c2:{{ cat_c2 }}">
+
+  <div class="post-hero">
+    <div class="wrap">
+      <div class="post-quicknav">
+        <a class="pill pill-home" href="{{ '/' | relative_url }}">← 홈으로</a>
+        <a class="pill" style="--c1:{{ cat_color }}" href="{{ '/categories/' | append: cat_slug | append: '/' | relative_url }}">{{ cat_icon }} {{ cat_name }}</a>
+      </div>
+      <h1 class="post-title">{{ page.title }}</h1>
+      {%- if page.summary %}<p class="post-sub">{{ page.summary }}</p>{% endif -%}
+      <div class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y년 %-m월 %-d일" }}</time>
+        {%- if page.platform %}<span class="dot"></span><span>{{ page.platform }}</span>{% endif -%}
+        {%- if page.airing %}<span class="dot"></span><span>{{ page.airing }}</span>{% endif -%}
+      </div>
+    </div>
+  </div>
+
+  {%- if page.image -%}
+  <div class="wrap post-cover">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" width="1200" height="630">
+  </div>
+  {%- endif -%}
+
+  <div class="wrap post-wrap">
+    <div class="post-body">
+      {{ content }}
+    </div>
+
+    {%- if page.verdict or page.watch_if -%}
+    <aside class="verdict-box">
+      {%- if page.verdict %}<p class="v-line"><strong>한 줄 평</strong> {{ page.verdict }}</p>{% endif -%}
+      {%- if page.watch_if %}<p class="v-line"><strong>이런 분께</strong> {{ page.watch_if }}</p>{% endif -%}
+      {%- if page.skip_if %}<p class="v-line"><strong>넘겨도 좋은 분</strong> {{ page.skip_if }}</p>{% endif -%}
+    </aside>
+    {%- endif -%}
+
+    {%- if page.tags.size > 0 -%}
+    <div class="post-tags">
+      {%- for t in page.tags -%}<span class="tag">#{{ t }}</span>{%- endfor -%}
+    </div>
+    {%- endif -%}
+
+    <nav class="post-nav">
+      {%- if page.previous -%}
+      <a class="pn prev" href="{{ page.previous.url | relative_url }}"><span>이전 글</span><strong>{{ page.previous.title }}</strong></a>
+      {%- endif -%}
+      {%- if page.next -%}
+      <a class="pn next" href="{{ page.next.url | relative_url }}"><span>다음 글</span><strong>{{ page.next.title }}</strong></a>
+      {%- endif -%}
+    </nav>
+
+    {%- assign sibling = site.categories[cat_name] | size -%}
+    {%- if sibling > 1 -%}
+    <section class="related">
+      <h2 class="sec-title">{{ cat_name }} 다른 글</h2>
+      <div class="grid">
+        {%- assign relcount = 0 -%}
+        {%- for p in site.categories[cat_name] -%}
+          {%- if p.url != page.url and relcount < 3 -%}
+            {%- include card.html post=p -%}
+            {%- assign relcount = relcount | plus: 1 -%}
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </section>
+    {%- endif -%}
+  </div>
+</article>

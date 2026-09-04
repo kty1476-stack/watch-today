@@ -1,0 +1,58 @@
+---
+layout: default
+title: 오늘 뭐보지
+---
+{%- assign latest = site.posts | slice: 0, 3 -%}
+
+<section class="hero">
+  <div class="wrap">
+    <p class="hero-kicker">{{ site.time | date: "%Y년 %-m월 %-d일" }} · 오늘의 편성</p>
+    <h1 class="hero-title">오늘 뭐 보지?</h1>
+    <p class="hero-desc">채널은 늘어나는데 볼 건 없다는 그 저녁을 위해서.<br>
+      드라마 회차 리뷰, 영화 평론, OTT 신작을 매일 세 편씩 골라 씁니다.</p>
+    <div class="hero-stats">
+      <span><strong>{{ site.posts.size }}</strong> 편의 글</span>
+      <span><strong>{{ site.data.categories.fixed.size }}</strong> 개 카테고리</span>
+      <span>매일 <strong>3편</strong> 발행</span>
+    </div>
+  </div>
+</section>
+
+{%- if latest.size > 0 -%}
+<section class="wrap section">
+  <h2 class="sec-title">오늘의 세 편</h2>
+  <p class="sec-desc">가장 최근에 올린 글부터. 시간이 없다면 맨 위 한 편만 보셔도 됩니다.</p>
+  <div class="grid grid-feature">
+    {%- for p in latest -%}{%- include card.html post=p -%}{%- endfor -%}
+  </div>
+</section>
+{%- endif -%}
+
+<section class="wrap section">
+  <h2 class="sec-title">카테고리로 고르기</h2>
+  <div class="cat-cards">
+    {%- for c in site.data.categories.fixed -%}
+    {%- assign n = site.categories[c.name] | size -%}
+    <a class="cat-card" href="{{ '/categories/' | append: c.slug | append: '/' | relative_url }}" style="--c1:{{ c.color }};--c2:{{ c.c2 }}">
+      <span class="cat-ico">{{ c.icon }}</span>
+      <strong>{{ c.name }}</strong>
+      <em>{{ c.desc }}</em>
+      <span class="cat-count">{{ n | default: 0 }}편</span>
+    </a>
+    {%- endfor -%}
+  </div>
+</section>
+
+{%- assign rest = site.posts | slice: 3, 21 -%}
+{%- if rest.size > 0 -%}
+<section class="wrap section">
+  <h2 class="sec-title">더 읽을 글</h2>
+  <div class="grid" id="moreGrid">
+    {%- for p in rest -%}{%- include card.html post=p -%}{%- endfor -%}
+  </div>
+</section>
+{%- endif -%}
+
+{%- if site.posts.size > 24 -%}
+<div class="wrap center"><a class="btn" href="{{ '/archive/' | relative_url }}">전체 글 목록 보기 →</a></div>
+{%- endif -%}

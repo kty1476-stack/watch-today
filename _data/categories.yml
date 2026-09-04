@@ -1,0 +1,40 @@
+# 카테고리 정의 — 이 파일만 고치면 사이트 전체(홈/카테고리/태그/상세)에 반영됩니다.
+# slug: URL과 파일명에 쓰는 영문 키 / name: 화면에 보이는 이름 / color: 포인트색 / c2: 그라디언트 끝색
+fixed:
+  - slug: drama
+    name: 드라마 리뷰
+    color: "#E11D48"
+    c2: "#7F1030"
+    icon: "▶"
+    desc: "지금 방영 중인 한국 드라마의 회차별 리뷰와 관전 포인트"
+  - slug: movie
+    name: 영화 평론
+    color: "#7C3AED"
+    c2: "#3B1C7A"
+    icon: "◈"
+    desc: "신작 심층 평론과 다시 볼 만한 명작 재조명"
+  - slug: ott
+    name: OTT 신작
+    color: "#0EA5E9"
+    c2: "#08506F"
+    icon: "◆"
+    desc: "넷플릭스·디즈니+·티빙·쿠팡플레이 신작 리뷰와 공개 일정"
+  - slug: issue
+    name: 이슈·시청률
+    color: "#F59E0B"
+    c2: "#7C4A05"
+    icon: "▲"
+    desc: "시청률과 화제성 지표로 읽는 방송가 이슈"
+  - slug: pick
+    name: 추천 리스트
+    color: "#10B981"
+    c2: "#065F46"
+    icon: "★"
+    desc: "오늘 밤 뭘 볼지 못 정했을 때 꺼내 보는 주제별 추천"
+
+# 새 카테고리가 생기면 위 fixed 아래에 slug/name/color/c2/icon/desc 여섯 줄만 추가하면 됩니다.
+# 색은 이미 쓰고 있는 색과 색상환에서 확실히 떨어진 계열로 고를 것.
+default:
+  color: "#64748B"
+  c2: "#26303D"
+  icon: "•"

@@ -1,0 +1,23 @@
+{%- assign p = include.post -%}
+{%- include catmeta.html name=p.categories.first -%}
+<article class="card" data-cat="{{ cat_slug }}">
+  <a class="card-thumb" href="{{ p.url | relative_url }}" aria-label="{{ p.title }}">
+    {%- if p.image -%}
+      <img src="{{ p.image | relative_url }}" alt="{{ p.title }}" loading="lazy" width="1200" height="630">
+    {%- else -%}
+      <span class="card-thumb-fallback" style="--c1:{{ cat_color }};--c2:{{ cat_c2 }}">{{ cat_icon }}</span>
+    {%- endif -%}
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <a class="pill" href="{{ '/categories/' | append: cat_slug | append: '/' | relative_url }}" style="--c1:{{ cat_color }}">{{ cat_icon }} {{ cat_name }}</a>
+      {%- if p.platform %}<span class="platform">{{ p.platform }}</span>{% endif -%}
+    </div>
+    <h2 class="card-title"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h2>
+    <p class="card-excerpt">{% if p.summary %}{{ p.summary }}{% else %}{{ p.excerpt | strip_html | truncate: 110 }}{% endif %}</p>
+    <div class="card-foot">
+      <time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%Y.%m.%d" }}</time>
+      {%- if p.verdict %}<span class="verdict">{{ p.verdict }}</span>{% endif -%}
+    </div>
+  </div>
+</article>

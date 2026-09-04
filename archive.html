@@ -1,0 +1,26 @@
+---
+layout: default
+title: 전체 글
+permalink: /archive/
+---
+<div class="wrap page-wrap">
+  <h1 class="page-title">전체 글</h1>
+  <p class="page-sub">지금까지 올린 {{ site.posts.size }}편을 최신순으로 모았습니다.</p>
+
+  {%- assign posts_by_month = site.posts | group_by_exp: "p", "p.date | date: '%Y년 %-m월'" -%}
+  {%- for month in posts_by_month -%}
+  <section class="arch-month">
+    <h2 class="arch-title">{{ month.name }} <span>{{ month.items.size }}편</span></h2>
+    <ul class="arch-list">
+      {%- for p in month.items -%}
+      {%- include catmeta.html name=p.categories.first -%}
+      <li>
+        <time>{{ p.date | date: "%m.%d" }}</time>
+        <span class="chip" style="--c1:{{ cat_color }}">{{ cat_name }}</span>
+        <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </section>
+  {%- endfor -%}
+</div>

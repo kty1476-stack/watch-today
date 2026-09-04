@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+  {%- seo -%}
+  <script>
+    (function(){try{var t=localStorage.getItem('wt-theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();
+  </script>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="brand-mark">▶</span>
+      <span class="brand-text">
+        <strong>오늘 뭐보지</strong>
+        <em>{{ site.tagline }}</em>
+      </span>
+    </a>
+    <div class="header-tools">
+      <button class="icon-btn" id="searchBtn" aria-label="검색 열기" title="검색">⌕</button>
+      <button class="icon-btn" id="themeBtn" aria-label="라이트/다크 전환" title="라이트/다크 전환">◐</button>
+      <button class="icon-btn only-mobile" id="menuBtn" aria-label="메뉴 열기" title="메뉴">☰</button>
+    </div>
+  </div>
+  <nav class="catnav" id="catnav" aria-label="카테고리">
+    <div class="wrap catnav-inner">
+      <a class="pill pill-home {% if page.url == '/' %}is-on{% endif %}" href="{{ '/' | relative_url }}">전체</a>
+      {%- for c in site.data.categories.fixed -%}
+      <a class="pill {% if page.cat_slug == c.slug or page.categories.first == c.name %}is-on{% endif %}" style="--c1:{{ c.color }}" href="{{ '/categories/' | append: c.slug | append: '/' | relative_url }}">{{ c.icon }} {{ c.name }}</a>
+      {%- endfor -%}
+      <a class="pill pill-ghost" href="{{ '/archive/' | relative_url }}">전체 글</a>
+      <a class="pill pill-ghost" href="{{ '/about/' | relative_url }}">소개</a>
+    </div>
+  </nav>
+</header>
+
+<div class="search-panel" id="searchPanel" hidden>
+  <div class="wrap">
+    <input type="search" id="searchInput" placeholder="제목·작품·배우 이름으로 검색" autocomplete="off">
+    <div id="searchResults" class="search-results"></div>
+  </div>
+</div>
+
+<main id="main">
+  {{ content }}
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="foot-brand">▶ 오늘 뭐보지</p>
+      <p class="foot-desc">{{ site.description }}</p>
+    </div>
+    <div class="foot-links">
+      {%- for c in site.data.categories.fixed -%}
+      <a href="{{ '/categories/' | append: c.slug | append: '/' | relative_url }}">{{ c.name }}</a>
+      {%- endfor -%}
+      <a href="{{ '/archive/' | relative_url }}">전체 글</a>
+      <a href="{{ '/about/' | relative_url }}">소개</a>
+      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+    </div>
+    <p class="foot-copy">© {{ site.time | date: "%Y" }} 오늘 뭐보지 · 문의 {{ site.email }}<br>
+    작품 정보는 공식 발표·보도자료를 교차 확인해 적습니다. 평가와 해석은 필자 개인의 의견입니다.</p>
+  </div>
+</footer>
+
+<script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
+</body>
+</html>

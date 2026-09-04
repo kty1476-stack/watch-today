@@ -1,0 +1,15 @@
+---
+layout: none
+permalink: /search.json
+---
+[
+{% for p in site.posts %}{% include catmeta.html name=p.categories.first %}{
+  "title": {{ p.title | jsonify }},
+  "url": {{ p.url | relative_url | jsonify }},
+  "date": {{ p.date | date: "%Y.%m.%d" | jsonify }},
+  "category": {{ cat_name | jsonify }},
+  "tags": {{ p.tags | join: " " | jsonify }},
+  "summary": {{ p.summary | default: p.excerpt | strip_html | strip_newlines | truncate: 150 | jsonify }}
+}{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]

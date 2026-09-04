@@ -9,6 +9,7 @@ baseurl: "/watch-today"
 
 lang: ko-KR
 timezone: Asia/Seoul
+future: true
 
 author:
   name: 오늘 뭐보지

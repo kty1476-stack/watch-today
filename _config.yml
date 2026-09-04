@@ -21,6 +21,10 @@ social:
   links:
     - https://github.com/kty1476-stack
 
+# 검색엔진 소유확인 코드 (값을 넣으면 <head>에 meta 태그가 자동으로 들어갑니다)
+naver_site_verification: ""
+bing_site_verification: ""
+
 markdown: kramdown
 kramdown:
   input: GFM

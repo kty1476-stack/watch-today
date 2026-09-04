@@ -9,6 +9,12 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+  {%- if site.naver_site_verification and site.naver_site_verification != "" -%}
+  <meta name="naver-site-verification" content="{{ site.naver_site_verification }}">
+  {%- endif -%}
+  {%- if site.bing_site_verification and site.bing_site_verification != "" -%}
+  <meta name="msvalidate.01" content="{{ site.bing_site_verification }}">
+  {%- endif -%}
   {%- seo -%}
   <script>
     (function(){try{var t=localStorage.getItem('wt-theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();

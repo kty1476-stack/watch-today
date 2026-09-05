@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="이슈·시청률 - 시청률 1위와">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#7C4A05"/>
+    </linearGradient>
+    <linearGradient id="scrim" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.34"/>
+      <stop offset="62%" stop-color="#000" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.10">
+    <circle cx="1080" cy="70" r="200" fill="#fff"/>
+    <circle cx="90" cy="600" r="150" fill="#fff"/>
+  </g>
+  <rect width="1200" height="630" fill="url(#scrim)"/>
+
+  <g transform="translate(810,118)" style="--c1:#F59E0B">
+      <rect x="30" y="60" width="340" height="270" rx="18" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.5)" stroke-width="6"/>
+      <path d="M70 280 L150 210 L210 240 L330 110" fill="none" stroke="rgba(255,255,255,.9)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="70" cy="280" r="12" fill="#fff"/><circle cx="150" cy="210" r="12" fill="#fff"/>
+      <circle cx="210" cy="240" r="12" fill="#fff"/><circle cx="330" cy="110" r="14" fill="#fff"/>
+      <path d="M296 110 h48 v46" fill="none" stroke="rgba(255,255,255,.6)" stroke-width="6" stroke-linecap="round"/>
+    </g>
+
+  <g font-family="'Noto Sans KR','Noto Sans CJK KR','Apple SD Gothic Neo','Malgun Gothic','Nanum Gothic',sans-serif">
+    <rect x="72" y="66" rx="20" height="40" width="166" fill="rgba(255,255,255,.92)"/>
+    <text x="155" y="94" font-size="22" font-weight="700" fill="#7C4A05" text-anchor="middle">이슈·시청률</text>
+
+    <text x="72" y="288" font-size="66" font-weight="900" fill="#fff" letter-spacing="-1.5">시청률 1위와</text>
+    <text x="72" y="370" font-size="66" font-weight="900" fill="#fff" letter-spacing="-1.5">화제성 1위 사이</text>
+
+    <rect x="72" y="420" width="86" height="6" rx="3" fill="rgba(255,255,255,.75)"/>
+    <text x="72" y="500" font-size="34" font-weight="500" fill="rgba(255,255,255,.92)">8월 마지막 주, 갈라진 두 개의 지표</text>
+
+    <text x="72" y="574" font-size="24" font-weight="700" fill="rgba(255,255,255,.7)">▶ 오늘 뭐보지</text>
+  </g>
+</svg>

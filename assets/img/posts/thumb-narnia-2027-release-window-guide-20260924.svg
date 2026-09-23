@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="OTT 신작 - 새로운 나니아">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0EA5E9"/>
+      <stop offset="100%" stop-color="#08506F"/>
+    </linearGradient>
+    <linearGradient id="scrim" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.34"/>
+      <stop offset="62%" stop-color="#000" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.10">
+    <circle cx="1080" cy="70" r="200" fill="#fff"/>
+    <circle cx="90" cy="600" r="150" fill="#fff"/>
+  </g>
+  <rect width="1200" height="630" fill="url(#scrim)"/>
+
+  <g transform="translate(810,118)" style="--c1:#0EA5E9">
+      <rect x="60" y="40" width="290" height="180" rx="16" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.45)" stroke-width="5"/>
+      <rect x="30" y="90" width="290" height="180" rx="16" fill="rgba(255,255,255,.18)" stroke="rgba(255,255,255,.6)" stroke-width="6"/>
+      <circle cx="175" cy="180" r="56" fill="rgba(255,255,255,.85)"/>
+      <path d="M158 152 L206 180 L158 208 Z" fill="#0EA5E9" opacity="0.95"/>
+      <rect x="60" y="310" width="230" height="12" rx="6" fill="rgba(255,255,255,.4)"/>
+      <rect x="60" y="342" width="150" height="12" rx="6" fill="rgba(255,255,255,.25)"/>
+    </g>
+
+  <g font-family="'Noto Sans KR','Noto Sans CJK KR','Apple SD Gothic Neo','Malgun Gothic','Nanum Gothic',sans-serif">
+    <rect x="72" y="66" rx="20" height="40" width="136" fill="rgba(255,255,255,.92)"/>
+    <text x="140" y="94" font-size="22" font-weight="700" fill="#08506F" text-anchor="middle">OTT 신작</text>
+
+    <text x="72" y="288" font-size="66" font-weight="900" fill="#fff" letter-spacing="-1.5">새로운 나니아</text>
+    <text x="72" y="370" font-size="66" font-weight="900" fill="#fff" letter-spacing="-1.5">공개 일정 안내</text>
+
+    <rect x="72" y="420" width="86" height="6" rx="3" fill="rgba(255,255,255,.75)"/>
+    <text x="72" y="500" font-size="34" font-weight="500" fill="rgba(255,255,255,.92)">극장과 넷플릭스의 서로 다른 날짜</text>
+
+    <text x="72" y="574" font-size="24" font-weight="700" fill="rgba(255,255,255,.7)">▶ 오늘 뭐보지</text>
+  </g>
+</svg>

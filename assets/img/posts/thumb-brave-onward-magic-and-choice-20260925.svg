@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="추천 리스트 - 마법이 시작한 질문">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#065F46"/>
+    </linearGradient>
+    <linearGradient id="scrim" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.34"/>
+      <stop offset="62%" stop-color="#000" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.10">
+    <circle cx="1080" cy="70" r="200" fill="#fff"/>
+    <circle cx="90" cy="600" r="150" fill="#fff"/>
+  </g>
+  <rect width="1200" height="630" fill="url(#scrim)"/>
+
+  <g transform="translate(810,118)" style="--c1:#10B981">
+      <path d="M200 40 L232 128 L326 132 L252 190 L278 282 L200 228 L122 282 L148 190 L74 132 L168 128 Z"
+            fill="rgba(255,255,255,.85)"/>
+      <rect x="60" y="316" width="280" height="14" rx="7" fill="rgba(255,255,255,.45)"/>
+      <rect x="60" y="348" width="200" height="14" rx="7" fill="rgba(255,255,255,.3)"/>
+      <rect x="60" y="380" width="240" height="14" rx="7" fill="rgba(255,255,255,.2)"/>
+    </g>
+
+  <g font-family="'Noto Sans KR','Noto Sans CJK KR','Apple SD Gothic Neo','Malgun Gothic','Nanum Gothic',sans-serif">
+    <rect x="72" y="66" rx="20" height="40" width="166" fill="rgba(255,255,255,.92)"/>
+    <text x="155" y="94" font-size="22" font-weight="700" fill="#065F46" text-anchor="middle">추천 리스트</text>
+
+    <text x="72" y="288" font-size="66" font-weight="900" fill="#fff" letter-spacing="-1.5">마법이 시작한 질문</text>
+    <text x="72" y="370" font-size="66" font-weight="900" fill="#fff" letter-spacing="-1.5">선택은 누가 할까</text>
+
+    <rect x="72" y="420" width="86" height="6" rx="3" fill="rgba(255,255,255,.75)"/>
+    <text x="72" y="500" font-size="34" font-weight="500" fill="rgba(255,255,255,.92)">메리다와 온워드, 소원과 책임을 읽는 두 편</text>
+
+    <text x="72" y="574" font-size="24" font-weight="700" fill="rgba(255,255,255,.7)">▶ 오늘 뭐보지</text>
+  </g>
+</svg>

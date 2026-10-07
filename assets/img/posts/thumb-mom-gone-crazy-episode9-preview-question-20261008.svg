@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="드라마 리뷰 - 엄마가 미쳤어요">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E11D48"/>
+      <stop offset="100%" stop-color="#7F1030"/>
+    </linearGradient>
+    <linearGradient id="scrim" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.34"/>
+      <stop offset="62%" stop-color="#000" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.10">
+    <circle cx="1080" cy="70" r="200" fill="#fff"/>
+    <circle cx="90" cy="600" r="150" fill="#fff"/>
+  </g>
+  <rect width="1200" height="630" fill="url(#scrim)"/>
+
+  <g transform="translate(810,118)" style="--c1:#E11D48">
+      <rect x="20" y="60" width="360" height="230" rx="22" fill="rgba(255,255,255,.16)" stroke="rgba(255,255,255,.55)" stroke-width="6"/>
+      <rect x="52" y="92" width="296" height="166" rx="10" fill="rgba(255,255,255,.10)"/>
+      <path d="M172 140 L240 175 L172 210 Z" fill="rgba(255,255,255,.85)"/>
+      <rect x="150" y="300" width="100" height="14" rx="7" fill="rgba(255,255,255,.5)"/>
+      <path d="M200 290 L200 300" stroke="rgba(255,255,255,.5)" stroke-width="10"/>
+      <path d="M120 30 L165 72 M280 30 L235 72" stroke="rgba(255,255,255,.45)" stroke-width="8" stroke-linecap="round"/>
+    </g>
+
+  <g font-family="'Noto Sans KR','Noto Sans CJK KR','Apple SD Gothic Neo','Malgun Gothic','Nanum Gothic',sans-serif">
+    <rect x="72" y="66" rx="20" height="40" width="166" fill="rgba(255,255,255,.92)"/>
+    <text x="155" y="94" font-size="22" font-weight="700" fill="#7F1030" text-anchor="middle">드라마 리뷰</text>
+
+    <text x="72" y="288" font-size="66" font-weight="900" fill="#fff" letter-spacing="-1.5">엄마가 미쳤어요</text>
+    <text x="72" y="370" font-size="66" font-weight="900" fill="#fff" letter-spacing="-1.5">9화 예고</text>
+
+    <rect x="72" y="420" width="86" height="6" rx="3" fill="rgba(255,255,255,.75)"/>
+    <text x="72" y="500" font-size="34" font-weight="500" fill="rgba(255,255,255,.92)">호감을 묻는 말, 대답할 사람의 자리</text>
+
+    <text x="72" y="574" font-size="24" font-weight="700" fill="rgba(255,255,255,.7)">▶ 오늘 뭐보지</text>
+  </g>
+</svg>

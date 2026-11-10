@@ -42,4 +42,4 @@ KBS 드라마의 공개 목록과 KBS 제공 영상을 소개하는 iMBC 클립 
 > 이 글은 공식 작품 소개와 공개 자료를 바탕으로 정리한 관전 포인트입니다. 본편을 직접 시청한 감상평이 아니며, 제공 여부와 공개 정보는 달라질 수 있습니다.
 {: .prompt-tip }
 
-<a href="https://kty1476-stack.github.io/posts/lifemaster-1045-milof-baguette/"><img src="{{ '/assets/img/posts/recommend-food-20261030-v1.svg' | relative_url }}" alt="다른 블로그 추천 글: 오늘의 맛집·생활정보 — [생활의달인] 식사빵으로 고르는 바게트, 부산 전포 밀로프" width="720" height="301" loading="lazy"></a>
+<a href="https://kty1476-stack.github.io/posts/lifemaster-1045-milof-baguette/"><img src="{{ '/assets/img/posts/recommend-lifemaster-1045-milof-baguette-20261110-v3.png' | relative_url }}" alt="다른 블로그 추천 글: 오늘의 맛집·생활정보 — [생활의달인] 식사빵으로 고르는 바게트, 부산 전포 밀로프" width="2172" height="724" style="width:100%;height:auto" loading="lazy"></a>

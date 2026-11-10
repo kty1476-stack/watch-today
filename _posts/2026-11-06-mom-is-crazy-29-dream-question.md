@@ -31,4 +31,4 @@ KBS가 유통한 29화 예고는 iMBC 클립과 JTBC의 KBS 영상 페이지에�
 
 이 글은 공식 작품 소개와 공개 자료를 바탕으로 정리한 관전 포인트입니다. 본편을 직접 시청한 감상평이 아니며, 국내 제공 여부와 이용 조건은 시청 전에 확인해 주세요.
 
-<a href="https://kty1476-stack.github.io/posts/jeonhyunmoo4-18-jinbat-noodles/"><img src="{{ '/assets/img/posts/recommend-food-20261106-v1.svg' | relative_url }}" alt="다른 블로그 추천 글: 오늘의 맛집·생활정보 — [전현무계획] 고명보다 육수에 집중하는 한 그릇, 일산 진밭국수 1호점" width="720" height="237" loading="lazy"></a>
+<a href="https://kty1476-stack.github.io/posts/jeonhyunmoo4-18-jinbat-noodles/"><img src="{{ '/assets/img/posts/recommend-jeonhyunmoo4-18-jinbat-noodles-20261110-v3.png' | relative_url }}" alt="다른 블로그 추천 글: 오늘의 맛집·생활정보 — [전현무계획] 고명보다 육수에 집중하는 한 그릇, 일산 진밭국수 1호점" width="2172" height="724" style="width:100%;height:auto" loading="lazy"></a>

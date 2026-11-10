@@ -44,4 +44,4 @@ KBS 편성에는 엄마가 미쳤어요 23회가 안내돼 있고, KBS가 제공
 > 이 글은 공식 작품 소개와 공개 자료를 바탕으로 정리한 관전 포인트입니다. 본편을 직접 시청한 리뷰가 아니며, 제공 여부와 편성은 달라질 수 있습니다.
 {: .prompt-tip }
 
-<a href="https://kty1476-stack.github.io/posts/lifemaster-1052-leeheungyong-bread/"><img src="{{ '/assets/img/posts/recommend-watch-20261029-v1.svg' | relative_url }}" alt="다른 블로그 추천 글: 오늘의 맛집·생활정보 — [생활의달인] 소금빵과 누룩 식사빵의 차이, 부산 이흥용과자점" width="720" height="296" loading="lazy"></a>
+<a href="https://kty1476-stack.github.io/posts/lifemaster-1052-leeheungyong-bread/"><img src="{{ '/assets/img/posts/recommend-lifemaster-1052-leeheungyong-bread-20261110-v3.png' | relative_url }}" alt="다른 블로그 추천 글: 오늘의 맛집·생활정보 — [생활의달인] 소금빵과 누룩 식사빵의 차이, 부산 이흥용과자점" width="2172" height="724" style="width:100%;height:auto" loading="lazy"></a>

@@ -35,4 +35,4 @@ summary: "흩어진 정보가 한 사람을 가리키기 시작할 때 첩보극
 > 이 글은 공식 작품 소개와 공개 자료를 바탕으로 정리한 관전 포인트이며, 본편을 직접 시청한 리뷰가 아닙니다. 공개 여부와 서비스 제공 조건은 해당 플랫폼에서 확인해 주세요.
 {: .prompt-tip }
 
-[![&#91;전현무계획&#93; 고명보다 육수에 집중하는 한 그릇, 일산 진밭국수 1호점]({{ '/assets/img/posts/recommend-2026-11-09-v1.png' | relative_url }})](https://kty1476-stack.github.io/posts/jeonhyunmoo4-18-jinbat-noodles/)
+<a href="https://kty1476-stack.github.io/posts/jeonhyunmoo4-18-jinbat-noodles/"><img src="{{ '/assets/img/posts/recommend-jeonhyunmoo4-18-jinbat-noodles-20261110-v3.png' | relative_url }}" alt="다른 블로그 추천 글: 오늘의 맛집·생활정보 — [전현무계획] 고명보다 육수에 집중하는 한 그릇, 일산 진밭국수 1호점" width="2172" height="724" style="width:100%;height:auto" loading="lazy"></a>

@@ -44,4 +44,4 @@ KBS 공식 예고 페이지와 KBS가 제공한 JTBC NOW 유통 페이지에서 
 > 이 글은 공식 작품 소개와 공개 자료를 바탕으로 정리한 관전 포인트입니다. 본편 전체를 직접 시청한 리뷰가 아니며, 시청 가능 여부와 제공 조건은 서비스별로 달라질 수 있습니다.
 {: .prompt-tip }
 
-<a href="https://kty1476-stack.github.io/posts/lifemaster-1045-milchanggo-baguette/"><img src="{{ '/assets/img/posts/recommend-food-20261031-v1.svg' | relative_url }}" alt="다른 블로그 추천 글: 오늘의 맛집·생활정보 — [생활의 달인] 바게트로 살펴보는 해리단길 빵집, 부산 밀창고" width="720" height="286" loading="lazy"></a>
+<a href="https://kty1476-stack.github.io/posts/lifemaster-1045-milchanggo-baguette/"><img src="{{ '/assets/img/posts/recommend-lifemaster-1045-milchanggo-baguette-20261110-v3.png' | relative_url }}" alt="다른 블로그 추천 글: 오늘의 맛집·생활정보 — [생활의 달인] 바게트로 살펴보는 해리단길 빵집, 부산 밀창고" width="2172" height="724" style="width:100%;height:auto" loading="lazy"></a>

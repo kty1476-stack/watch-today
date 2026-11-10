@@ -31,4 +31,4 @@ summary: "11월 6일 넷플릭스 공개작. 해고노동자 가족과 다큐멘
 
 이 글은 공식 작품 소개와 공개 자료를 바탕으로 정리한 관전 포인트입니다. 국내 제공 여부와 이용 조건은 시청 전에 확인해 주세요.
 
-<a href="https://kty1476-stack.github.io/posts/daily-care-service-hours-copayment/"><img src="{{ '/assets/img/posts/recommend-care-20261107-v1.svg' | relative_url }}" alt="다른 블로그 추천 글 · 오늘의 맛집·생활정보 · [정부지원금] 일상돌봄 서비스, 기본서비스 이용시간과 본인부담 안내" width="720" height="237" loading="lazy"></a>
+<a href="https://kty1476-stack.github.io/posts/daily-care-service-hours-copayment/"><img src="{{ '/assets/img/posts/recommend-daily-care-service-hours-copayment-20261110-v3.png' | relative_url }}" alt="다른 블로그 추천 글: 오늘의 맛집·생활정보 — [정부지원금] 일상돌봄 서비스, 기본서비스 이용시간과 본인부담 안내" width="2172" height="724" style="width:100%;height:auto" loading="lazy"></a>

@@ -42,4 +42,4 @@ summary: "줄리 & 줄리아의 공식 소개를 바탕으로 요리와 기록, 
 > 이 글은 공식 작품 소개와 공개 자료를 바탕으로 정리한 관전 포인트입니다. 본편을 직접 시청한 리뷰가 아니며, 편성·공개 및 이용 가능 여부는 달라질 수 있습니다.
 {: .prompt-tip }
 
-<a href="https://kty1476-stack.github.io/posts/tasty-guys-511-leplat-french/"><img src="{{ '/assets/img/posts/recommend-food-20261101-v1.svg' | relative_url }}" alt="다른 블로그 추천 글: 오늘의 맛집·생활정보 — [맛있는녀석들] 양파수프부터 고르는 프랑스 가정식, 일산 르쁠라" width="720" height="237" loading="lazy"></a>
+<a href="https://kty1476-stack.github.io/posts/tasty-guys-511-leplat-french/"><img src="{{ '/assets/img/posts/recommend-tasty-guys-511-leplat-french-20261110-v3.png' | relative_url }}" alt="다른 블로그 추천 글: 오늘의 맛집·생활정보 — [맛있는녀석들] 양파수프부터 고르는 프랑스 가정식, 일산 르쁠라" width="2172" height="724" style="width:100%;height:auto" loading="lazy"></a>
